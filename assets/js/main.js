@@ -1,14 +1,9 @@
-/**
-* Template Name: iPortfolio - v3.10.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+// Decorator are used
 (function() {
   "use strict";
 
   /**
-   * Easy selector helper function
+   * For the Easy selector helper function
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -20,7 +15,7 @@
   }
 
   /**
-   * Easy event listener function
+   * Event Call/ listener function
    */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
@@ -34,14 +29,14 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Event easy on scroll event listener 
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
 
   /**
-   * Navbar links active state on scroll
+   * Navbar links were active state on scroll
    */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
@@ -61,7 +56,7 @@
   onscroll(document, navbarlinksActive)
 
   /**
-   * Scrolls to an element with header offset
+   * Scrolls to an element with header 
    */
   const scrollto = (el) => {
     let elementPos = select(el).offsetTop
